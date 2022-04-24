@@ -80,11 +80,33 @@ header {
   line-height: 1.142;
   color: #212121;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-list-item:hover {
   color: var(--hover-color);
 }
 
+.index::after {
+  content: '';
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  bottom: -33px;
+  left: 1px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.portfolio::after {
+  content: '';
+  position: absolute;
+  width: 58px;
+  height: 4px;
+  bottom: -33px;
+  left: -1px;
+  background: #2196f3;
+  border-radius: 2px;
+}
 /* contacts */
 .contacts {
   text-decoration: none;
@@ -101,12 +123,14 @@ header {
   line-height: 1.142;
   color: #757575;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-list-item-envelope,
 .cont-list-item-smartphone {
   margin-right: 10px;
   fill: #757575;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover > .cont-list-item-envelope,
@@ -161,6 +185,8 @@ header {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color, background-color, box-shadow;
 }
 .filters-button:hover,
 .filters-button:focus {
@@ -188,6 +214,7 @@ header {
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 30px);
   cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-list-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -474,9 +501,11 @@ header {
   height: 44px;
   width: 44px;
   border-radius: 50% 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-icon {
   fill: var(--paragraph-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon:hover {
@@ -516,6 +545,7 @@ header {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-link:hover {
   border-color: var(--hover-color);
@@ -523,6 +553,7 @@ header {
 
 .our-clients-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-link:hover > .our-clients-icon {
   fill: var(--hover-color);
@@ -616,8 +647,6 @@ header {
   cursor: pointer;
   font-size: 28px;
 }
-.close-button:onclick .backdrop {
-}
 .info-list-item > img {
   display: block;
 }
@@ -640,26 +669,4 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
   width: 370px;
   height: 70px;
-}
-
-.index::after {
-  content: '';
-  position: absolute;
-  width: 53px;
-  height: 4px;
-  bottom: -33px;
-  left: 1px;
-  background: #2196f3;
-  border-radius: 2px;
-}
-
-.portfolio::after {
-  content: '';
-  position: absolute;
-  width: 58px;
-  height: 4px;
-  bottom: -33px;
-  left: -1px;
-  background: #2196f3;
-  border-radius: 2px;
 }
