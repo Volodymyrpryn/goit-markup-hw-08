@@ -496,6 +496,80 @@
         <button type="button" class="close-button" data-modal-close>
           &#215;
         </button>
+        <div class="forms">
+          <form class="modal_form">
+            <p class="form-header">Zostaw swoje dane w formularzu poniżej</p>
+            <label for="user-name" class="modal_form-label">Imię</label>
+            <div class="modal_form-input">
+              <svg class="modal_form-icon">
+                <use href="/images/InlineSprite.svg#person" />
+              </svg>
+              <input
+                type="text"
+                name="username"
+                class="modal_form-input-text"
+                id="user-name"
+                required
+              />
+            </div>
+
+            <label for="phone" class="modal_form-label">Telefon</label>
+            <div class="modal_form-input">
+              <svg class="modal_form-icon">
+                <use href="/images/InlineSprite.svg#phone" />
+              </svg>
+              <input
+                type="tel"
+                name="phone"
+                class="modal_form-input-text"
+                id="phone"
+                required
+              />
+            </div>
+
+            <label for="email" class="modal_form-label">Email</label>
+            <div class="modal_form-input">
+              <svg class="modal_form-icon">
+                <use href="/images/InlineSprite.svg#email" />
+              </svg>
+              <input
+                type="email"
+                name="email"
+                class="modal_form-input-text"
+                id="email"
+                required
+              />
+            </div>
+
+            <label for="comment" class="modal_form-label">Komentarz</label>
+            <textarea
+              name="comment"
+              class="modal_form-input-text modal_form-textarea"
+              id="comment"
+              placeholder="Wprowadź tekst"
+            ></textarea>
+
+            <label class="modal_form-regulations">
+              <input
+                type="checkbox"
+                name="accept"
+                class="modal_form-regulations-checkbox"
+                required
+              />
+              <span class="modal_form-regulations-text"
+                >Oświadczam, iż akceptuję
+                <a href="#" class="modal_form-regulations-link">Regulamin</a> i
+                <a href="#" class="modal_form-regulations-link"
+                  >Politykę Prywatności.</a
+                >
+              </span>
+            </label>
+
+            <button class="btn-blue modal-btn-submit" type="submit">
+              Wyślij
+            </button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="js/modal.js"></script>
