@@ -331,6 +331,64 @@ header {
 .address {
   margin-right: 70px;
 }
+.subscribe-header {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.subscribe-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.email-input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.subscribe-btn-icon {
+  fill: #ffffff;
+  z-index: 5;
+}
 
 /* Main page */
 /* Hero section */
@@ -566,6 +624,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-right: 78px;
 }
 .join-us-title {
   font-family: Roboto;
