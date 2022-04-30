@@ -876,7 +876,7 @@ header {
 }
 
 .modal_form-regulations-checkbox:checked {
-  background-image: url(./images/icon_check.svg);
+  background-image: url(../images/icon_check.svg);
   background-color: var(--hover-color);
   border-color: var(--hover-color);
 }
