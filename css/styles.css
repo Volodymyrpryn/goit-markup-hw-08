@@ -786,9 +786,8 @@ header {
 .modal_form-input:focus-within,
 .modal_form-input:hover {
   border-color: var(--hover-color);
-  color: var(--hover-color);
 }
-.modal_form-input:focus-within,
+.modal_form-input:focus-within > .modal_form-icon,
 .modal_form-input:hover > .modal_form-icon {
   fill: var(--hover-color);
 }
