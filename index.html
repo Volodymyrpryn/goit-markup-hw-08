@@ -548,22 +548,25 @@
               id="comment"
               placeholder="Wprowadź tekst"
             ></textarea>
-
-            <label class="modal_form-regulations">
+            <div class="checkbox">
               <input
+                id="accept"
                 type="checkbox"
                 name="accept"
                 class="modal_form-regulations-checkbox"
                 required
               />
-              <span class="modal_form-regulations-text"
-                >Oświadczam, iż akceptuję
-                <a href="#" class="modal_form-regulations-link">Regulamin</a> i
-                <a href="#" class="modal_form-regulations-link"
-                  >Politykę Prywatności.</a
-                >
-              </span>
-            </label>
+              <label for="accept" class="modal_form-regulations">
+                <span class="modal_form-regulations-text"
+                  >Oświadczam, iż akceptuję
+                  <a href="#" class="modal_form-regulations-link">Regulamin</a>
+                  i
+                  <a href="#" class="modal_form-regulations-link"
+                    >Politykę Prywatności.</a
+                  >
+                </span>
+              </label>
+            </div>
 
             <button class="btn-blue modal-btn-submit" type="submit">
               Wyślij
